@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="NLog.Config" Version="4.7.15" />
+		<PackageReference Include="NLog.Extensions.Logging" Version="5.0.1" />
+		<PackageReference Include="NLog.Web.AspNetCore" Version="5.1.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\ProjectManagement\PM.Application\ProjectManagement.Application.Contracts\ProjectManagement.Application.Contracts.csproj" />
+	  <ProjectReference Include="..\ProjectManagement\PM.Infrastructure\ProjectManagement.Configuration\ProjectManagement.Configuration.csproj" />
+	</ItemGroup>
+
+</Project>
